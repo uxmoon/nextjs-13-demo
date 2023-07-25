@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 const HomePage = () => {
   return (
     <div>
       <h1>Next.js 13 Crash Course</h1>
-      <ul>
+      <ul className='links'>
         <li>
           <Link href='/'>Home</Link>
         </li>
@@ -16,7 +16,7 @@ const HomePage = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

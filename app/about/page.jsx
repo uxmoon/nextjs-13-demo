@@ -1,3 +1,6 @@
+export const metadata = {
+  title: 'About page',
+};
 const AboutPage = () => {
   return (
     <div>
@@ -9,7 +12,7 @@ const AboutPage = () => {
         porro quod?
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
