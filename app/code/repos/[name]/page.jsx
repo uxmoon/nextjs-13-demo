@@ -1,7 +1,13 @@
-const RepoPage = ({ params }) => {
+import Repo from '@/app/components/Repo';
+import Link from 'next/link';
+
+const RepoPage = ({ params: { name } }) => {
   return (
     <div className='card'>
-      <h2>{params.name}</h2>
+      <Link href='/code/repos' className='btn btn-back'>
+        Back to repository list
+      </Link>
+      <Repo name={name} />
     </div>
   );
 };
