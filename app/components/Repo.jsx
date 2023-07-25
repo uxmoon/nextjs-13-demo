@@ -24,7 +24,7 @@ const Repo = async ({ name }) => {
         </div>
         <div className='card-stat'>
           <FaEye />
-          <span>{repo.wartchers_count}</span>
+          <span>{repo.watchers_count}</span>
         </div>
       </div>
     </>
