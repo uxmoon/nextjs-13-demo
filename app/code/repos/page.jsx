@@ -18,7 +18,7 @@ const ReposPage = async () => {
       <ul className='repo-list'>
         {repos.map((repo) => (
           <li key={repo.id}>
-            <Link href={`code/repos/${repo.name}`}>
+            <Link href={`/code/repos/${repo.name}`}>
               <h3>{repo.name}</h3>
               <p>{repo.description}</p>
               <div className='repo-details'>
