@@ -2,7 +2,9 @@ import Link from 'next/link';
 import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 
 async function fetchRepo(name) {
-  const reponse = await fetch(`https://api.github.com/repos/uxmoon/${name}`);
+  const reponse = await fetch(`https://api.github.com/repos/uxmoon/${name}`, {
+    next: { revalidate: 60 },
+  });
   const repo = await reponse.json();
   return repo;
 }
