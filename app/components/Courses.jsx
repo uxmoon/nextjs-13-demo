@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
-async function fetchCourses() {
-  const response = await fetch('http://localhost:3000/api/courses');
-  const courses = await response.json();
-  return courses;
-}
-const Courses = async () => {
-  const courses = await fetchCourses();
+// async function fetchCourses() {
+//   const response = await fetch('http://localhost:3000/api/courses');
+//   const courses = await response.json();
+//   return courses;
+// }
+const Courses = ({ courses }) => {
+  // const courses = fetchCourses();
   return (
     <div className='courses'>
-      <h2>Courses</h2>
+      <h2>Courses list</h2>
       {courses.map((course) => (
         <div key={course.id} className='card'>
           <h3>{course.title}</h3>
